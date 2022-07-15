@@ -32,6 +32,10 @@
         padding-left: 2rem;
       }
 
+      li, p {
+        text-align: justify;
+      }
+
       /* common classes */
       .flex-box {
         display: flex;
@@ -149,12 +153,46 @@
       }
 
       .work-experience .current {
-        background: #009688;
+        background-color: #009688;
         border-radius: 4px;
         padding: 0 0.5rem;
         color: #fff;
         margin-left: 0.5rem;
         line-height: 24px;
+      }
+
+      .download-btn-wrapper {
+        position: fixed;
+        bottom: 1rem;
+        right: 0;
+        left: 0;
+      }
+
+      .download-btn {
+        max-width: 1366px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        padding-right: 1rem;
+      }
+
+      .download-btn a {
+        font-size: 1.5rem;
+        margin-right: 0.25rem;
+        animation: movedown 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes movedown {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(.25rem);
+        }
+        50% {
+          transform: translateY(.5rem);
+        }
       }
     </style>
   </head>
@@ -358,7 +396,7 @@
           <section>
             <h3 class="mb-0">
               <strong>
-                <i class="fa-solid fa-circle-check text-highlight"></i> Orther
+                <i class="fa-solid fa-circle-check text-highlight"></i> Other
                 things:
                 <span style="font-size: 1rem; font-weight: 400"
                   >Source control with git, Agile-Scrum working flow, bitbucket,
@@ -368,6 +406,18 @@
             </h3>
           </section>
         </article>
+      </div>
+
+      <div class="download-btn-wrapper">
+        <div class="download-btn">
+          <a
+            class="text-highlight"
+            href="./Dong-Thach-CV.pdf"
+            type="download"
+            target="_blank"
+            ><i class="fa-solid fa-cloud-arrow-down"></i
+          ></a>
+        </div>
       </div>
     </article>
   </body>
