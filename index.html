@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dong Thach CV</title>
+    <script
+      src="https://kit.fontawesome.com/ef95f33027.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        color: #757575;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul li {
+        margin-bottom: 0.5rem;
+      }
+      ul {
+        padding-left: 2rem;
+      }
+
+      /* common classes */
+      .flex-box {
+        display: flex;
+        align-items: center;
+      }
+
+      .text-grey {
+        color: #757575;
+      }
+
+      .text-dark {
+        color: #000;
+      }
+
+      .text-highlight {
+        color: #009688;
+      }
+
+      .mr-1 {
+        margin-right: 1rem;
+      }
+
+      .mb-1 {
+        margin-bottom: 1rem;
+      }
+
+      .mb-0 {
+        margin-bottom: 0;
+      }
+
+      .p-1 {
+        padding: 1rem;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid #eee;
+      }
+      /* layout */
+      .cv-container {
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        align-items: stretch;
+        min-height: 95vh;
+      }
+      .left-handside,
+      .work-experience,
+      .knowledge {
+        box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+      }
+      .left-handside {
+        width: 33.33%;
+        margin-right: 1rem;
+      }
+      .main-contain {
+        width: 66.66%;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-contain .knowledge {
+        flex-grow: 1;
+      }
+
+      @media screen and (max-width: 768px) {
+        .cv-container {
+          flex-direction: column;
+        }
+        .left-handside,
+        .main-contain {
+          width: 100%;
+        }
+        .left-handside {
+          margin-bottom: 1rem;
+        }
+        .p-1 {
+          padding: 0.5rem;
+        }
+      }
+
+      /* left-handside */
+      .left-handside > .avatar {
+        position: relative;
+        background: #ebe7e4;
+        text-align: center;
+      }
+
+      .left-handside > .avatar > img {
+        width: 55%;
+        margin: 0 auto -4px auto;
+      }
+
+      .left-handside > .avatar > h2 {
+        position: absolute;
+        margin: 0 1rem;
+        bottom: 1rem;
+      }
+
+      .left-handside hr {
+        height: 0;
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 0 1rem;
+      }
+
+      /* main contain */
+      .work-experience > h2,
+      .knowledge > h2 {
+        font-size: 30px;
+      }
+
+      .work-experience > section,
+      .knowledge > section {
+        padding-left: 0.5rem;
+      }
+
+      .work-experience .current {
+        background: #009688;
+        border-radius: 4px;
+        padding: 0 0.5rem;
+        color: #fff;
+        margin-left: 0.5rem;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="cv-container">
+      <article class="left-handside">
+        <section class="avatar">
+          <img
+            src="https://res.cloudinary.com/dongthach/image/upload/v1657530088/ecommerce/avatar_nuhxqf.png"
+          />
+          <h2 class="text-dark">Thach Dong</h2>
+        </section>
+
+        <section class="p-1">
+          <div class="flex-box mb-1">
+            <i class="fa-solid fa-briefcase text-highlight mr-1"></i>
+            <span>Front-end developer</span>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/dir/10.8416774,106.7352588/74,+5+%C4%90%C6%B0%E1%BB%9Dng+36,+Linh+%C4%90%C3%B4ng,+Th%E1%BB%A7+%C4%90%E1%BB%A9c,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8405581,106.7415128,17z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x317527c80d9e1e47:0x1c843929fb7657aa!2m2!1d106.7457638!2d10.84048!3e0"
+            target="_blank"
+            class="flex-box text-grey mb-1"
+          >
+            <i class="fa-solid fa-house-chimney text-highlight mr-1"></i>
+            <span>Thu Duc, HCM city</span>
+          </a>
+
+          <a
+            href="mailto:thachdong270293@gmail.com"
+            class="flex-box text-grey mb-1"
+          >
+            <i class="fa-solid fa-envelope text-highlight mr-1"></i>
+            <span>thachdong270293@gmail.com</span>
+          </a>
+
+          <a href="tel:0353860797" class="flex-box text-grey">
+            <i class="fa-solid fa-phone text-highlight mr-1"></i>
+            <span>0353 860 797</span>
+          </a>
+        </section>
+
+        <hr />
+
+        <article class="p-1">
+          <h3>
+            <i class="fa-solid fa-bullseye text-highlight"></i>
+            About me and short goals
+          </h3>
+
+          <ul>
+            <li>
+              I have 2.5 years of experiences in front-end development, include
+              2 years working with Reactjs and it ecosystem libraries.
+            </li>
+            <li>I familiar with development tool like Scrum.</li>
+            <li>
+              I graduated engineering degree in non-IT field. I start learning
+              website programming by myself, starting with Javascript and get
+              hiring in 2019, and now for dive deep in programming paradigm I
+              decide to extend knowledge in low level language like c#.
+            </li>
+            <li>
+              Beside, I realized that English is extremely important tool for
+              growing programming skills, so I want to join team with english
+              communication environment (my speaking skills is not good then i
+              think that will helpfully for improving speaking).
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article class="p-1">
+          <h3>
+            <i class="fa-solid fa-asterisk text-highlight"></i>
+            Skills
+          </h3>
+          <ul>
+            <li>Problem solving.</li>
+            <li>Teamworking.</li>
+          </ul>
+        </article>
+      </article>
+
+      <div class="main-contain">
+        <article class="work-experience p-1 mb-1">
+          <h2 class="flex-box">
+            <i class="fa-solid fa-briefcase text-highlight mr-1"></i>
+            Work Experience
+          </h2>
+
+          <section class="mb-1 border-bottom">
+            <h3>Front End Developer / AKADON</h3>
+            <div class="flex-box text-highlight mb-1">
+              <i class="fa-solid fa-calendar-days mr-1"></i>
+              Sep 2020 - <span class="current">Current</span>
+            </div>
+            <p>
+              Developing client-side projects using ReactJS, which have some
+              features like video call, messaging, notifying, multil languages,
+              payment with Onepay and Vnpay, time management with calendar ...
+            </p>
+            <p>
+              Libraries used: Reactjs, Redux-toolkits, Bootstrap, Twilio,
+              Fullcalendar
+            </p>
+            <p>
+              Product sites:
+              <a
+                target="_blank"
+                href="https://akadon.edu.vn/"
+                style="display: block"
+                >https://akadon.edu.vn/</a
+              >
+              <a target="_blank" href="https://lms.akadon.edu.vn/"
+                >https://lms.akadon.edu.vn/ (Learning management system)</a
+              >
+            </p>
+          </section>
+
+          <section>
+            <h3>Front End Intern / Egany</h3>
+            <div class="flex-box text-highlight mb-1">
+              <i class="fa-solid fa-calendar-days mr-1"></i>
+              Dec 2019 - May 2020
+            </div>
+            <p class="mb-0">
+              Build landing pages base on ecommerce flatform like Haravan and
+              Shopify using html, css, javascript, liquid.
+            </p>
+          </section>
+        </article>
+
+        <article class="knowledge p-1">
+          <h2 class="flex-box">
+            <i class="fa-solid fa-graduation-cap text-highlight mr-1"></i>
+            Knowledge
+          </h2>
+
+          <section>
+            <h3>
+              <strong>
+                <i class="fa-solid fa-circle-check text-highlight"></i>
+                Programming languages:
+              </strong>
+            </h3>
+            <ul>
+              <li>
+                Javascript: Understanding how JS work under the hood; two
+                pillars make js so powerful is clouse and prototypal
+                inheritance; Lexical vs dynamic scope; Asynchronous task
+                (callback, promise, async/await), JS design patterns: Modules,
+                HOC, Compose, PIP.
+              </li>
+              <li>
+                Typescript: a super set of JS which add some features to JS and
+                transfer JS from dynamic type to static type language.
+              </li>
+              <li>C#: have basic knowledge of C#.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>
+              <strong>
+                <i class="fa-solid fa-circle-check text-highlight"></i> Reactjs
+                and Javascript base libraries:
+              </strong>
+            </h3>
+
+            <ul>
+              <li>Familiarity with main concepts in reactjs</li>
+              <li>
+                Have knowledge about React ecosystem libraries like: App state
+                management (redux-toolkits, redux-thunk, redux-saga); Working
+                with date and calendar (momentjs, fullcalendar); Working with
+                form (formik, react-hook-form); Multiple languages (i18next);
+                Interact with restful api (axios); Implement PWA ...
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>
+              <strong>
+                <i class="fa-solid fa-circle-check text-highlight"></i> Styling
+                and UI libraries:
+              </strong>
+            </h3>
+
+            <ul>
+              <li>Familiarity with css, scss.</li>
+              <li>
+                UI libraries: i have knowledge about bootstrap (familiarity),
+                marterial-ui, style-component.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="mb-0">
+              <strong>
+                <i class="fa-solid fa-circle-check text-highlight"></i> Orther
+                things:
+                <span style="font-size: 1rem; font-weight: 400"
+                  >Source control with git, Agile-Scrum working flow, bitbucket,
+                  Opsgenie, figma ...
+                </span>
+              </strong>
+            </h3>
+          </section>
+        </article>
+      </div>
+    </article>
+  </body>
+</html>
